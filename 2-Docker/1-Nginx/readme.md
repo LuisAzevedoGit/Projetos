@@ -86,3 +86,10 @@ Foi criado com sucesso:
 um container Docker
 um servidor Nginx funcional
 uma página HTML servida através do Docker
+
+
+# 📋 Container em Execução
+
+| CONTAINER ID | IMAGE | COMMAND | CREATED | STATUS | PORTS | NAMES |
+|---|---|---|---|---|---|---|
+| 8bfc6a70397b | my-nginx-app | "/docker-entrypoint.…" | 5 seconds ago | Up 3 seconds | 0.0.0.0:8080->80/tcp, [::]:8080->80/tcp | hardcore_solomon |
