@@ -71,8 +71,7 @@ http://localhost:8080
 Ou:
 
 http://IP_DA_VM:8080
-## 🔍 Teste via Terminal
-curl localhost:8080
+
 ## 🛠️ Comandos Úteis
 Ver logs: docker logs <container_id>
 
