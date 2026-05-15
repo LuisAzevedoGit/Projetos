@@ -329,13 +329,3 @@ sudo ./create_users.sh
 ```
 
 ---
-
-# 🚀 Conceitos Aprendidos
-
-- Bash scripting
-- Linux users
-- Linux groups
-- CSV parsing
-- Automação Linux
-- Gestão de permissões
-- Administração de sistemas
