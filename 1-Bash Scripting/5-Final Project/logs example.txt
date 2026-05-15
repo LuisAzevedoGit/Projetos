@@ -1,0 +1,503 @@
+[2026-05-13 12:48:53] Starting remote backup
+receiving incremental file list
+./
+.bash_history
+.bash_logout
+.bashrc
+.profile
+.vboxclient-clipboard-tty2-control.pid
+.vboxclient-clipboard-tty2-service.pid
+.vboxclient-draganddrop-tty2-control.pid
+.vboxclient-hostversion-tty2-control.pid
+.vboxclient-seamless-tty2-control.pid
+.vboxclient-vmsvga-session-tty2-control.pid
+.vboxclient-vmsvga-session-tty2-service.pid
+.config/
+.config/.gsd-keyboard.settings-ported
+.config/gnome-initial-setup-done
+.config/user-dirs.dirs
+.config/user-dirs.locale
+.config/dconf/
+.config/dconf/user
+.config/enchant/
+.config/enchant/en_US.dic
+.config/enchant/en_US.exc
+.config/evolution/
+.config/evolution/sources/
+.config/evolution/sources/system-proxy.source
+.config/gnome-initial-setup/
+.config/gnome-initial-setup/upgrade-26.04-done
+.config/goa-1.0/
+.config/gtk-3.0/
+.config/gtk-3.0/bookmarks
+.config/gtk-4.0/
+.config/ibus/
+.config/ibus/bus/
+.config/ibus/bus/594f15ebbb024bda9ce9628ecf15a35d-unix-wayland-0
+.config/nautilus/
+.config/org.gnome.Ptyxis/
+.config/org.gnome.Ptyxis/session.gvariant
+.config/pulse/
+.config/pulse/cookie
+.config/systemd/
+.config/systemd/user/
+.config/systemd/user/default.target.wants/
+.config/systemd/user/default.target.wants/snap.prompting-client.daemon.service -> /etc/systemd/user/snap.prompting-client.daemon.service
+.config/tiling-assistant/
+.config/tiling-assistant/tiledSessionRestore2.json
+.config/ubuntu-insights/
+.config/ubuntu-insights/linux-consent.toml
+.config/ubuntu-insights/ubuntu_desktop_provision-consent.toml
+.config/ubuntu-insights/ubuntu_release_upgrader-consent.toml
+.config/update-notifier/
+.local/
+.local/share/
+.local/share/recently-used.xbel
+.local/share/Trash/
+.local/share/Trash/files/
+.local/share/Trash/files/devops@UbuntuBackups/
+.local/share/Trash/files/devops@UbuntuBackups/backups.sh
+.local/share/Trash/files/devops@UbuntuBackups/create_users.sh
+.local/share/Trash/files/devops@UbuntuBackups/update.sh
+.local/share/Trash/files/devops@UbuntuBackups/user.sh
+.local/share/Trash/files/devops@UbuntuBackups/users/
+.local/share/Trash/files/devops@UbuntuBackups/users/list_users.csv
+.local/share/Trash/info/
+.local/share/Trash/info/devops@UbuntuBackups.trashinfo
+.local/share/applications/
+.local/share/containers/
+.local/share/containers/storage/
+.local/share/containers/storage/overlay-containers/
+.local/share/evolution/
+.local/share/evolution/addressbook/
+.local/share/evolution/addressbook/system/
+.local/share/evolution/addressbook/system/contacts.db
+.local/share/evolution/addressbook/system/photos/
+.local/share/evolution/addressbook/trash/
+.local/share/evolution/calendar/
+.local/share/evolution/calendar/system/
+.local/share/evolution/calendar/system/calendar.ics
+.local/share/evolution/calendar/trash/
+.local/share/evolution/mail/
+.local/share/evolution/mail/trash/
+.local/share/evolution/memos/
+.local/share/evolution/memos/trash/
+.local/share/evolution/tasks/
+.local/share/evolution/tasks/system/
+.local/share/evolution/tasks/system/tasks.ics
+.local/share/evolution/tasks/trash/
+.local/share/flatpak/
+.local/share/flatpak/db/
+.local/share/gnome-settings-daemon/
+.local/share/gnome-settings-daemon/input-sources-converted
+.local/share/gnome-shell/
+.local/share/gnome-shell/application_state
+.local/share/gnome-shell/session-active-history.json
+.local/share/gnome-shell/session.gvdb
+.local/share/gnome-shell/update-check-50
+.local/share/gvfs-metadata/
+.local/share/gvfs-metadata/home
+.local/share/gvfs-metadata/home-2e176fee.log
+.local/share/gvfs-metadata/root
+.local/share/gvfs-metadata/root-77fe7f2c.log
+.local/share/ibus-table/
+.local/share/icc/
+.local/share/keyrings/
+.local/share/keyrings/login.keyring
+.local/share/keyrings/user.keystore
+.local/share/nano/
+.local/share/nautilus/
+.local/share/nautilus/scripts/
+.local/share/nautilus/tags/
+.local/share/nautilus/tags/meta.db
+.local/share/org.gnome.Ptyxis/
+.local/share/org.gnome.Ptyxis/palettes/
+.local/share/org.gnome.TextEditor/
+.local/share/org.gnome.TextEditor/recently-used.xbel
+.local/share/org.gnome.TextEditor/session.gvariant
+.local/share/org.gnome.TextEditor/drafts/
+.local/share/sounds/
+.local/share/user-session-migration/
+.local/share/user-session-migration/ubuntu:GNOME.state
+.local/state/
+.local/state/gnome-session@ubuntu.state
+.local/state/wireplumber/
+.local/state/wireplumber/stream-properties
+.ssh/
+.ssh/authorized_keys
+.ssh/id_ed25519
+.ssh/id_ed25519.pub
+.ssh/known_hosts
+.ssh/known_hosts.old
+Desktop/
+Documents/
+Downloads/
+Music/
+Pictures/
+Public/
+Templates/
+Videos/
+scripts/
+scripts/backups.sh
+scripts/create_users.sh
+scripts/update.sh
+scripts/user.sh
+scripts/users/
+scripts/users/list_users.csv
+snap/
+snap/firefox/
+snap/firefox/current -> 8107
+snap/firefox/8107/
+snap/firefox/8107/.last_revision
+snap/firefox/8107/.themes -> /snap/firefox/8107/data-dir/themes
+snap/firefox/8107/.config/
+snap/firefox/8107/.config/user-dirs.dirs
+snap/firefox/8107/.config/user-dirs.dirs.md5sum
+snap/firefox/8107/.config/user-dirs.locale
+snap/firefox/8107/.config/user-dirs.locale.md5sum
+snap/firefox/8107/.config/dconf/
+snap/firefox/8107/.config/dconf/user -> /home/devops/.config/dconf/user
+snap/firefox/8107/.config/fontconfig/
+snap/firefox/8107/.config/fontconfig/fonts.conf
+snap/firefox/8107/.config/gtk-2.0/
+snap/firefox/8107/.config/gtk-2.0/gtkfilechooser.ini -> /home/devops/.config/gtk-2.0/gtkfilechooser.ini
+snap/firefox/8107/.config/gtk-3.0/
+snap/firefox/8107/.config/gtk-3.0/bookmarks -> /home/devops/.config/gtk-3.0/bookmarks
+snap/firefox/8107/.config/gtk-3.0/gtk.css -> /home/devops/.config/gtk-3.0/gtk.css
+snap/firefox/8107/.config/gtk-3.0/settings.ini -> /home/devops/.config/gtk-3.0/settings.ini
+snap/firefox/8107/.config/ibus/
+snap/firefox/8107/.config/ibus/bus -> /home/devops/.config/ibus/bus
+snap/firefox/8107/.local/
+snap/firefox/8107/.local/share/
+snap/firefox/8107/.local/share/themes -> /snap/firefox/8107/data-dir/themes
+snap/firefox/8107/.local/share/glib-2.0/
+snap/firefox/8107/.local/share/glib-2.0/schemas/
+snap/firefox/8107/.local/share/icons/
+snap/firefox/common/
+snap/firefox/common/.mozilla/
+snap/firefox/common/.mozilla/firefox/
+snap/firefox/common/.mozilla/firefox/profiles.ini
+snap/firefox/common/.mozilla/firefox/Crash Reports/
+snap/firefox/common/.mozilla/firefox/Crash Reports/InstallTime20260404010525
+snap/firefox/common/.mozilla/firefox/Crash Reports/crash_helper_server.log
+snap/firefox/common/.mozilla/firefox/Crash Reports/events/
+snap/firefox/common/.mozilla/firefox/Pending Pings/
+snap/firefox/common/.mozilla/firefox/Profile Groups/
+snap/firefox/common/.mozilla/firefox/Profile Groups/9b45c682.sqlite
+snap/firefox/common/.mozilla/firefox/Profile Groups/9b45c682.sqlite-shm
+snap/firefox/common/.mozilla/firefox/Profile Groups/9b45c682.sqlite-wal
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/.parentlock
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/AlternateServices.bin
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/ExperimentStoreData.json
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/SiteSecurityServiceState.bin
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/addonStartup.json.lz4
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/addons.json
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/bounce-tracking-protection.sqlite
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/broadcast-listeners.json
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/cert9.db
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/compatibility.ini
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/containers.json
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/content-prefs.sqlite
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/cookies.sqlite
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/cookies.sqlite-wal
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/domain_to_categories.sqlite
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/domain_to_categories.sqlite-journal
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/extension-preferences.json
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/extensions.json
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/favicons.sqlite
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/favicons.sqlite-shm
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/favicons.sqlite-wal
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/formhistory.sqlite
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/handlers.json
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/key4.db
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/logins.db
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/permissions.sqlite
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/pkcs11.txt
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/places.sqlite
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/places.sqlite-shm
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/places.sqlite-wal
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/prefs.js
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/protections.sqlite
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/search.json.mozlz4
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/sessionCheckpoints.json
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/shield-preference-experiments.json
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage.sqlite
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/times.json
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/webappsstore.sqlite
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/webappsstore.sqlite-wal
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/xulstore.json
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/bookmarkbackups/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/crashes/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/crashes/store.json.mozlz4
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/crashes/events/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/datareporting/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/datareporting/aborted-session-ping
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/datareporting/session-state.json
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/datareporting/state.json
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/datareporting/archived/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/datareporting/archived/2026-05/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/datareporting/archived/2026-05/1778493597197.1181d201-5168-4fad-a08a-b92efdb21f6f.new-profile.jsonlz4
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/datareporting/archived/2026-05/1778493597217.8a8fe611-0ab6-4fb1-922b-c9ea4ebd093e.event.jsonlz4
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/datareporting/archived/2026-05/1778493597261.bcd02cad-89c2-4b66-a875-0a7e8b7e141b.main.jsonlz4
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/datareporting/archived/2026-05/1778493597264.9a9afc45-116c-45aa-a859-6e39b6a16c42.first-shutdown.jsonlz4
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/datareporting/archived/2026-05/1778494527641.8ee5e778-4a4a-4c8e-8082-1b404066366e.event.jsonlz4
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/datareporting/glean/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/datareporting/glean/client_id.txt
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/datareporting/glean/db/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/datareporting/glean/db/data.safe.bin
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/datareporting/glean/events/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/datareporting/glean/events/events
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/datareporting/glean/pending_pings/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/datareporting/glean/tmp/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/extension-store/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/extension-store/data.safe.bin
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/extensions/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/extensions/langpack-en-US@firefox.mozilla.org.xpi
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/extensions/newtab@mozilla.org.xpi
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/features/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/features/{22cd6e06-3e84-45fd-9e4f-4f8e5782c9d2}/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/features/{22cd6e06-3e84-45fd-9e4f-4f8e5782c9d2}/webcompat@mozilla.org.xpi
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/gmp-gmpopenh264/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/gmp-gmpopenh264/2.6.0/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/gmp-gmpopenh264/2.6.0/gmpopenh264.info
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/gmp-gmpopenh264/2.6.0/libgmpopenh264.so
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/minidumps/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/minidumps/04bb4029-da64-e938-1fa0-ee3b42611937.dmp
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/saved-telemetry-pings/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260419-0-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260419-1-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260420-0-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260420-1-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260421-0-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260421-1-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260422-0-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260422-1-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260423-0-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260423-1-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260424-0-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260424-1-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260425-0-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260425-1-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260426-0-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260426-1-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260427-0-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260427-1-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260428-0-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260428-1-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260429-0-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260429-1-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260430-0-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260430-1-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260501-0-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260501-1-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260502-0-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260502-1-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260503-0-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260503-1-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260504-0-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260504-1-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260505-0-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260505-1-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260506-0-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/20260506-1-default.filter.delta
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/crlite.filter
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/security_state/data.safe.bin
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/sessionstore-backups/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/sessionstore-backups/previous.jsonlz4
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/sessionstore-backups/recovery.baklz4
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/sessionstore-backups/recovery.jsonlz4
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/sessionstore-backups/upgrade.jsonlz4-20260404010525
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/settings/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/settings/data.safe.bin
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/ls-archive.sqlite
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/default/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/default/https+++chatgpt.com/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/default/https+++chatgpt.com/.metadata-v2
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/default/https+++chatgpt.com/ls/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/default/https+++chatgpt.com/ls/data.sqlite
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/default/https+++chatgpt.com/ls/usage
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/default/https+++www.google.com/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/default/https+++www.google.com/.metadata-v2
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/default/https+++www.google.com/ls/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/default/https+++www.google.com/ls/data.sqlite
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/default/https+++www.google.com/ls/usage
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/.metadata-v2
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/1451318868ntouromlalnodry--epcr.sqlite
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/1451318868ntouromlalnodry--epcr.sqlite-wal
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/1657114595AmcateirvtiSty.sqlite
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/1657114595AmcateirvtiSty.sqlite-wal
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/2823318777ntouromlalnodry--naod.sqlite
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/2823318777ntouromlalnodry--naod.sqlite-wal
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/2918063365piupsah.sqlite
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/2918063365piupsah.sqlite-wal
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/3561288849sdhlie.sqlite
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/3561288849sdhlie.sqlite-wal
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.sqlite
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.sqlite-wal
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/1451318868ntouromlalnodry--epcr.files/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/1657114595AmcateirvtiSty.files/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/2823318777ntouromlalnodry--naod.files/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/2918063365piupsah.files/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/3561288849sdhlie.files/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.files/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.files/1
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.files/2
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.files/journals/
+snap/firefox/common/.mozilla/firefox/xyiu1q9l.default/storage/temporary/
+snap/firmware-updater/
+snap/firmware-updater/current -> 226
+snap/firmware-updater/226/
+snap/firmware-updater/226/.last_revision
+snap/firmware-updater/226/.themes -> /snap/firmware-updater/226/data-dir/themes
+snap/firmware-updater/226/.config/
+snap/firmware-updater/226/.config/user-dirs.dirs
+snap/firmware-updater/226/.config/user-dirs.dirs.md5sum
+snap/firmware-updater/226/.config/user-dirs.locale
+snap/firmware-updater/226/.config/user-dirs.locale.md5sum
+snap/firmware-updater/226/.config/dconf/
+snap/firmware-updater/226/.config/dconf/user -> /home/devops/.config/dconf/user
+snap/firmware-updater/226/.config/fontconfig/
+snap/firmware-updater/226/.config/fontconfig/fonts.conf
+snap/firmware-updater/226/.config/gtk-2.0/
+snap/firmware-updater/226/.config/gtk-2.0/gtkfilechooser.ini -> /home/devops/.config/gtk-2.0/gtkfilechooser.ini
+snap/firmware-updater/226/.config/gtk-3.0/
+snap/firmware-updater/226/.config/gtk-3.0/bookmarks -> /home/devops/.config/gtk-3.0/bookmarks
+snap/firmware-updater/226/.config/gtk-3.0/gtk.css -> /home/devops/.config/gtk-3.0/gtk.css
+snap/firmware-updater/226/.config/gtk-3.0/settings.ini -> /home/devops/.config/gtk-3.0/settings.ini
+snap/firmware-updater/226/.config/ibus/
+snap/firmware-updater/226/.config/ibus/bus -> /home/devops/.config/ibus/bus
+snap/firmware-updater/226/.local/
+snap/firmware-updater/226/.local/share/
+snap/firmware-updater/226/.local/share/themes -> /snap/firmware-updater/226/data-dir/themes
+snap/firmware-updater/226/.local/share/glib-2.0/
+snap/firmware-updater/226/.local/share/glib-2.0/schemas/
+snap/firmware-updater/226/.local/share/icons/
+snap/firmware-updater/common/
+snap/prompting-client/
+snap/prompting-client/current -> 222
+snap/prompting-client/204/
+snap/prompting-client/204/.last_revision
+snap/prompting-client/204/.themes -> /snap/prompting-client/204/data-dir/themes
+snap/prompting-client/204/.config/
+snap/prompting-client/204/.config/user-dirs.dirs
+snap/prompting-client/204/.config/user-dirs.dirs.md5sum
+snap/prompting-client/204/.config/user-dirs.locale
+snap/prompting-client/204/.config/user-dirs.locale.md5sum
+snap/prompting-client/204/.config/dconf/
+snap/prompting-client/204/.config/dconf/user -> /home/devops/.config/dconf/user
+snap/prompting-client/204/.config/fontconfig/
+snap/prompting-client/204/.config/fontconfig/fonts.conf
+snap/prompting-client/204/.config/gtk-2.0/
+snap/prompting-client/204/.config/gtk-2.0/gtkfilechooser.ini -> /home/devops/.config/gtk-2.0/gtkfilechooser.ini
+snap/prompting-client/204/.config/gtk-3.0/
+snap/prompting-client/204/.config/gtk-3.0/bookmarks -> /home/devops/.config/gtk-3.0/bookmarks
+snap/prompting-client/204/.config/gtk-3.0/gtk.css -> /home/devops/.config/gtk-3.0/gtk.css
+snap/prompting-client/204/.config/gtk-3.0/settings.ini -> /home/devops/.config/gtk-3.0/settings.ini
+snap/prompting-client/204/.config/ibus/
+snap/prompting-client/204/.config/ibus/bus -> /home/devops/.config/ibus/bus
+snap/prompting-client/204/.local/
+snap/prompting-client/204/.local/share/
+snap/prompting-client/204/.local/share/themes -> /snap/prompting-client/204/data-dir/themes
+snap/prompting-client/204/.local/share/glib-2.0/
+snap/prompting-client/204/.local/share/glib-2.0/schemas/
+snap/prompting-client/204/.local/share/icons/
+snap/prompting-client/222/
+snap/prompting-client/222/.last_revision
+snap/prompting-client/222/.themes -> /snap/prompting-client/222/data-dir/themes
+snap/prompting-client/222/.config/
+snap/prompting-client/222/.config/user-dirs.dirs
+snap/prompting-client/222/.config/user-dirs.dirs.md5sum
+snap/prompting-client/222/.config/user-dirs.locale
+snap/prompting-client/222/.config/user-dirs.locale.md5sum
+snap/prompting-client/222/.config/dconf/
+snap/prompting-client/222/.config/dconf/user -> /home/devops/.config/dconf/user
+snap/prompting-client/222/.config/fontconfig/
+snap/prompting-client/222/.config/fontconfig/fonts.conf
+snap/prompting-client/222/.config/gtk-2.0/
+snap/prompting-client/222/.config/gtk-2.0/gtkfilechooser.ini -> /home/devops/.config/gtk-2.0/gtkfilechooser.ini
+snap/prompting-client/222/.config/gtk-3.0/
+snap/prompting-client/222/.config/gtk-3.0/bookmarks -> /home/devops/.config/gtk-3.0/bookmarks
+snap/prompting-client/222/.config/gtk-3.0/gtk.css -> /home/devops/.config/gtk-3.0/gtk.css
+snap/prompting-client/222/.config/gtk-3.0/settings.ini -> /home/devops/.config/gtk-3.0/settings.ini
+snap/prompting-client/222/.config/ibus/
+snap/prompting-client/222/.config/ibus/bus -> /home/devops/.config/ibus/bus
+snap/prompting-client/222/.local/
+snap/prompting-client/222/.local/share/
+snap/prompting-client/222/.local/share/themes -> /snap/prompting-client/222/data-dir/themes
+snap/prompting-client/222/.local/share/glib-2.0/
+snap/prompting-client/222/.local/share/glib-2.0/schemas/
+snap/prompting-client/222/.local/share/icons/
+snap/prompting-client/common/
+snap/snap-store/
+snap/snap-store/current -> 1367
+snap/snap-store/1367/
+snap/snap-store/1367/.last_revision
+snap/snap-store/1367/.themes -> /snap/snap-store/1367/data-dir/themes
+snap/snap-store/1367/.config/
+snap/snap-store/1367/.config/user-dirs.dirs
+snap/snap-store/1367/.config/user-dirs.dirs.md5sum
+snap/snap-store/1367/.config/user-dirs.locale
+snap/snap-store/1367/.config/user-dirs.locale.md5sum
+snap/snap-store/1367/.config/dconf/
+snap/snap-store/1367/.config/dconf/user -> /home/devops/.config/dconf/user
+snap/snap-store/1367/.config/fontconfig/
+snap/snap-store/1367/.config/fontconfig/fonts.conf
+snap/snap-store/1367/.config/gtk-2.0/
+snap/snap-store/1367/.config/gtk-2.0/gtkfilechooser.ini -> /home/devops/.config/gtk-2.0/gtkfilechooser.ini
+snap/snap-store/1367/.config/gtk-3.0/
+snap/snap-store/1367/.config/gtk-3.0/bookmarks -> /home/devops/.config/gtk-3.0/bookmarks
+snap/snap-store/1367/.config/gtk-3.0/gtk.css -> /home/devops/.config/gtk-3.0/gtk.css
+snap/snap-store/1367/.config/gtk-3.0/settings.ini -> /home/devops/.config/gtk-3.0/settings.ini
+snap/snap-store/1367/.config/ibus/
+snap/snap-store/1367/.config/ibus/bus -> /home/devops/.config/ibus/bus
+snap/snap-store/1367/.local/
+snap/snap-store/1367/.local/share/
+snap/snap-store/1367/.local/share/themes -> /snap/snap-store/1367/data-dir/themes
+snap/snap-store/1367/.local/share/glib-2.0/
+snap/snap-store/1367/.local/share/glib-2.0/schemas/
+snap/snap-store/1367/.local/share/icons/
+snap/snap-store/1367/.local/share/snap-store/
+snap/snap-store/1367/.local/share/snap-store/snap-store.json
+snap/snap-store/1367/.local/share/snap-store/snap-store.log -> /home/devops/snap/snap-store/1367/.local/share/snap-store/snap-store.log.7308
+snap/snap-store/1367/.local/share/snap-store/snap-store.log.7308
+snap/snap-store/common/
+snap/snapd-desktop-integration/
+snap/snapd-desktop-integration/current -> 361
+snap/snapd-desktop-integration/361/
+snap/snapd-desktop-integration/361/.last_revision
+snap/snapd-desktop-integration/361/.themes -> /snap/snapd-desktop-integration/361/data-dir/themes
+snap/snapd-desktop-integration/361/.config/
+snap/snapd-desktop-integration/361/.config/user-dirs.dirs
+snap/snapd-desktop-integration/361/.config/user-dirs.dirs.md5sum
+snap/snapd-desktop-integration/361/.config/user-dirs.locale
+snap/snapd-desktop-integration/361/.config/user-dirs.locale.md5sum
+snap/snapd-desktop-integration/361/.config/dconf/
+snap/snapd-desktop-integration/361/.config/dconf/user -> /home/devops/.config/dconf/user
+snap/snapd-desktop-integration/361/.config/fontconfig/
+snap/snapd-desktop-integration/361/.config/fontconfig/fonts.conf
+snap/snapd-desktop-integration/361/.config/gtk-2.0/
+snap/snapd-desktop-integration/361/.config/gtk-2.0/gtkfilechooser.ini -> /home/devops/.config/gtk-2.0/gtkfilechooser.ini
+snap/snapd-desktop-integration/361/.config/gtk-3.0/
+snap/snapd-desktop-integration/361/.config/gtk-3.0/bookmarks -> /home/devops/.config/gtk-3.0/bookmarks
+snap/snapd-desktop-integration/361/.config/gtk-3.0/gtk.css -> /home/devops/.config/gtk-3.0/gtk.css
+snap/snapd-desktop-integration/361/.config/gtk-3.0/settings.ini -> /home/devops/.config/gtk-3.0/settings.ini
+snap/snapd-desktop-integration/361/.config/ibus/
+snap/snapd-desktop-integration/361/.config/ibus/bus -> /home/devops/.config/ibus/bus
+snap/snapd-desktop-integration/361/.local/
+snap/snapd-desktop-integration/361/.local/share/
+snap/snapd-desktop-integration/361/.local/share/themes -> /snap/snapd-desktop-integration/361/data-dir/themes
+snap/snapd-desktop-integration/361/.local/share/glib-2.0/
+snap/snapd-desktop-integration/361/.local/share/glib-2.0/schemas/
+snap/snapd-desktop-integration/361/.local/share/icons/
+snap/snapd-desktop-integration/common/
+
+sent 5,551 bytes  received 17,984,561 bytes  3,270,929.45 bytes/sec
+total size is 55,219,314  speedup is 3.07
+[2026-05-13 12:48:58] Backup completed successfully
+Backup completed in 5 seconds
