@@ -74,23 +74,13 @@ http://IP_DA_VM:8080
 ## 🔍 Teste via Terminal
 curl localhost:8080
 ## 🛠️ Comandos Úteis
-Ver logs
+Ver logs: docker logs <container_id>
 
-docker logs <container_id>
+Entrar no container: docker exec -it <container_id> sh
 
-Entrar no container
+Parar container: docker stop <container_id>
 
-docker exec -it <container_id> sh
-
-Parar container
-
-docker stop <container_id>
-
-Remover container
-
-docker rm <container_id>
-
-
+Remover container: docker rm <container_id>
 
 ## 📋 Container em Execução
 
