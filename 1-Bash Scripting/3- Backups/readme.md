@@ -309,25 +309,3 @@ cat /var/log/backup/rsync-local.log
 ```
 
 ---
-
-# 🚀 Melhorias Futuras
-
-- Automatizar com cron
-- Backups remotos via SSH
-- Compressão automática
-- Rotação de logs
-- Retenção de backups
-- Notificações por email
-- Monitorização
-
----
-
-# 📚 Tecnologias Utilizadas
-
-- Ubuntu Server
-- Bash
-- Rsync
-- Linux CLI
-- File System
-- Linux Permissions
-- Logs
