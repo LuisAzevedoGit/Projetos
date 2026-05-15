@@ -12,7 +12,7 @@ O objetivo foi aprender:
 
 ---
 
-# 📁 Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ```text
 2-python/
@@ -21,7 +21,10 @@ O objetivo foi aprender:
 ├── requirements.txt
 ├── Dockerfile
 └── data.csv
-🐍 Script Python (process_data.py)
+```
+## 🐍 Script Python (process_data.py)
+
+```python
 import pandas as pd
 
 # Lê o arquivo CSV
@@ -42,9 +45,11 @@ linhas_com_erro = df[
 # Mostra as linhas encontradas
 print("\nLinhas que contêm a palavra 'erro':")
 print(linhas_com_erro)
-📦 requirements.txt
+```
+## 📦 requirements.txt
 pandas
-🐳 Dockerfile
+## 🐳 Dockerfile
+```docker
 FROM python:3.9-slim
 
 WORKDIR /app
@@ -56,7 +61,8 @@ RUN pip install -r requirements.txt
 COPY . .
 
 CMD ["python", "process_data.py"]
-🧠 Explicação do Dockerfile
+```
+### 🧠 Explicação do Dockerfile
 🔹 FROM python:3.9-slim
 
 Usa uma imagem leve de Python.
@@ -81,11 +87,11 @@ Copia todo o projeto para dentro do container.
 
 Executa o script Python automaticamente.
 
-🏗️ Build da Imagem
+## 🏗️ Build da Imagem
 docker build -t python-script .
-🚀 Executar o Container
+## 🚀 Executar o Container
 docker run -v $(pwd)/data:/app/data python-script
-🧠 Explicação do comando
+### 🧠 Explicação do comando
 🔹 -v (volume)
 
 Permite ligar uma pasta local ao container:
@@ -94,25 +100,11 @@ $(pwd)/data → /app/data
 
 👉 isto permite que o container aceda ao ficheiro CSV local
 
-📊 Exemplo de Output
+## 📊 Exemplo de Output
 Total de linhas: 6
 
 Linhas que contêm a palavra 'erro':
-                   Olá
 1     erro no download
 4       erro no upload
 5  erro failed to open
-🧠 Conceitos Aprendidos
-Docker com Python
-gestão de dependências (pip + requirements.txt)
-volumes no Docker
-execução de scripts em container
-processamento de ficheiros CSV com pandas
-🚀 Resultado Final
 
-Foi criado com sucesso:
-
-um container Python funcional
-processamento automático de CSV
-filtragem de dados dentro de Docker
-uso de volumes para dados externos
