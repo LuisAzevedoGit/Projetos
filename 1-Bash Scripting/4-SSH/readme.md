@@ -219,22 +219,4 @@ sudo systemctl status sshd
 
 ---
 
-# 🚀 Melhorias Futuras
-
-- Desativar login por password
-- Desativar root login
-- Configurar firewall UFW
-- Instalar Fail2Ban
-- Alterar porta SSH
-- Automatizar configuração SSH
-
----
-
-# 📚 Tecnologias Utilizadas
-
-- Ubuntu Server
-- OpenSSH
-- Linux CLI
-- VirtualBox
-- SSH Keys
 - Linux Networking
