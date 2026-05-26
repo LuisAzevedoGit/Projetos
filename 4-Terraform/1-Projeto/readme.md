@@ -203,45 +203,6 @@ terraform destroy
 
 ---
 
-## 🛠️ Comandos Utilizados
-
-Verificar Terraform:
-
-```bash
-terraform version
-```
-
-Inicializar:
-
-```bash
-terraform init
-```
-
-Validar:
-
-```bash
-terraform validate
-```
-
-Ver plano:
-
-```bash
-terraform plan
-```
-
-Criar infraestrutura:
-
-```bash
-terraform apply
-```
-
-Apagar infraestrutura:
-
-```bash
-terraform destroy
-```
-
----
 
 ## ✅ Resultado Final
 
