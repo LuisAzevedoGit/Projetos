@@ -26,7 +26,6 @@ Toda a infraestrutura foi criada automaticamente através de código, sem config
 * Terraform
 * AWS
 * EC2
-* VPC
 * Security Groups
 * IAM
 * Ubuntu Server
