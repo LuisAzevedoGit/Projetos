@@ -27,8 +27,10 @@ Este tipo de configuração é frequentemente utilizado em ambientes DevOps para
 ---
 
 
-⚙️ Configuração Terraform
+## ⚙️ Configuração Terraform
 main.tf
+
+```text
 data "aws_
 vpc" "default" {
   default = true
@@ -82,6 +84,8 @@ output "public_ips" {
     k => v.public_ip
   }
 }
+```
+
 🔐 Configuração AWS CLI
 
 Foi criado um utilizador IAM dedicado para Terraform.
@@ -95,10 +99,10 @@ aws configure
 
 Preencher:
 
-AWS Access Key ID
-AWS Secret Access Key
-Region: eu-north-1
-Output: json
+* AWS Access Key ID
+* AWS Secret Access Key
+* Region: eu-north-1
+* Output: json
 Testar Credenciais
 aws sts get-caller-identity
 🚀 Workflow Terraform
