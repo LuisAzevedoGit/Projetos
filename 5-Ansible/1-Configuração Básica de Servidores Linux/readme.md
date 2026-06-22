@@ -86,16 +86,20 @@ output "public_ips" {
 }
 ```
 
-🔐 Configuração AWS CLI
+## 🔐 Configuração AWS CLI
 
 Foi criado um utilizador IAM dedicado para Terraform.
 
 Não foi utilizada a conta root da AWS.
 
-Instalar AWS CLI
+### Instalar AWS CLI
+```text
 sudo apt install awscli -y
+```
 Configurar Credenciais
+```text 
 aws configure
+```
 
 Preencher:
 
@@ -103,31 +107,39 @@ Preencher:
 * AWS Secret Access Key
 * Region: eu-north-1
 * Output: json
-Testar Credenciais
+
+## Testar Credenciais
 aws sts get-caller-identity
-🚀 Workflow Terraform
-Inicializar Projeto
+## 🚀 Workflow Terraform
+### Inicializar Projeto
+```text 
 terraform init
-Ver Plano
+```
+### Ver Plano
+```text 
 terraform plan
+```
 
 Resultado esperado:
 
 Plan: 3 to add, 0 to change, 0 to destroy.
-Criar Infraestrutura
+### Criar Infraestrutura
+```text 
 terraform apply
+```
 
-Confirmar:
+### Confirmar:
+ Terraform cria automaticamente:
 
-yes
+* Security Group
+* EC2 ansible-controller
+* EC2 ansible-target
 
-Terraform cria automaticamente:
+### Ver Outputs
 
-Security Group
-EC2 ansible-controller
-EC2 ansible-target
-Ver Outputs
+```text 
 terraform output
+```
 
 Exemplo:
 
