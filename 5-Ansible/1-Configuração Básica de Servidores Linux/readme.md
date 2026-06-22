@@ -96,7 +96,7 @@ Não foi utilizada a conta root da AWS.
 ```text
 sudo apt install awscli -y
 ```
-Configurar Credenciais
+### Configurar Credenciais
 ```text 
 aws configure
 ```
