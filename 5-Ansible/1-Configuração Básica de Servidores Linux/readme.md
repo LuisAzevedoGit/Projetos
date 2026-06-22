@@ -22,8 +22,116 @@ Este tipo de configuração é frequentemente utilizado em ambientes DevOps para
 * Ubuntu Server
 * AWS EC2
 * SSH
+* Terraform
 
 ---
+
+
+⚙️ Configuração Terraform
+main.tf
+data "aws_
+vpc" "default" {
+  default = true
+}
+
+resource "aws_security_group" "ssh_sg" {
+  name        = "allow-ssh"
+  description = "Allow SSH from anywhere"
+  vpc_id      = data.aws_vpc.default.id
+
+  ingress {
+    description = "SSH"
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+
+locals {
+  servers = [
+    "ansible-controller",
+    "ansible-target"
+  ]
+}
+
+resource "aws_instance" "ubuntu_server" {
+  for_each = toset(local.servers)
+
+  ami           = "ami-05d62b9bc5a6ca605"
+  instance_type = "t3.micro"
+  key_name      = "key"
+
+  vpc_security_group_ids = [aws_security_group.ssh_sg.id]
+
+  tags = {
+    Name = each.key
+  }
+}
+
+output "public_ips" {
+  value = {
+    for k, v in aws_instance.ubuntu_server :
+    k => v.public_ip
+  }
+}
+🔐 Configuração AWS CLI
+
+Foi criado um utilizador IAM dedicado para Terraform.
+
+Não foi utilizada a conta root da AWS.
+
+Instalar AWS CLI
+sudo apt install awscli -y
+Configurar Credenciais
+aws configure
+
+Preencher:
+
+AWS Access Key ID
+AWS Secret Access Key
+Region: eu-north-1
+Output: json
+Testar Credenciais
+aws sts get-caller-identity
+🚀 Workflow Terraform
+Inicializar Projeto
+terraform init
+Ver Plano
+terraform plan
+
+Resultado esperado:
+
+Plan: 3 to add, 0 to change, 0 to destroy.
+Criar Infraestrutura
+terraform apply
+
+Confirmar:
+
+yes
+
+Terraform cria automaticamente:
+
+Security Group
+EC2 ansible-controller
+EC2 ansible-target
+Ver Outputs
+terraform output
+
+Exemplo:
+
+ansible-controller = "xx.xx.xx.xx"
+ansible-target     = "xx.xx.xx.xx"
+
+
+
 
 ## 📂 Estrutura do Projeto
 
@@ -54,6 +162,18 @@ target1 ansible_host=<IP_DA_VM> ansible_user=ubuntu
 ```
 
 ---
+
+
+
+🚀 Testar Conectividade
+ansible -i hosts targets -m ping
+
+Resultado esperado:
+
+{
+  "ping": "pong"
+}
+
 
 ## 📜 Playbook
 
