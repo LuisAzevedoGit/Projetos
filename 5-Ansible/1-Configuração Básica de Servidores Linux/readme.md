@@ -108,8 +108,7 @@ Preencher:
 * Region: eu-north-1
 * Output: json
 
-## Testar Credenciais
-aws sts get-caller-identity
+
 ## 🚀 Workflow Terraform
 ### Inicializar Projeto
 ```text 
@@ -143,8 +142,8 @@ terraform output
 
 Exemplo:
 
-ansible-controller = "xx.xx.xx.xx"
-ansible-target     = "xx.xx.xx.xx"
+* ansible-controller = "xx.xx.xx.xx"
++ ansible-target     = "xx.xx.xx.xx"
 
 
 
