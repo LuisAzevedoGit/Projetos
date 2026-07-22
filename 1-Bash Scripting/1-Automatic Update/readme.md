@@ -55,11 +55,7 @@ sudo apt update
 
 Atualiza pacotes instalados sem pedir confirmação.
 
-```bash
-sudo apt upgrade -y
-```
 
-👉 `-y` aceita automaticamente as confirmações.
 
 ---
 
@@ -67,9 +63,6 @@ sudo apt upgrade -y
 
 Executa upgrades completos incluindo dependências.
 
-```bash
-sudo apt full-upgrade -y
-```
 
 ---
 
@@ -77,9 +70,6 @@ sudo apt full-upgrade -y
 
 Remove dependências e pacotes antigos.
 
-```bash
-sudo apt autoremove -y
-```
 
 ---
 
@@ -87,9 +77,6 @@ sudo apt autoremove -y
 
 Limpa ficheiros temporários da cache do apt.
 
-```bash
-sudo apt clean
-```
 
 ---
 
@@ -115,12 +102,6 @@ chmod +x update.sh
 
 ```bash
 ./update.sh
-```
-
-ou
-
-```bash
-sudo ./update.sh
 ```
 
 ---
