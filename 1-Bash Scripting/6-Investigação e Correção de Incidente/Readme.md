@@ -49,7 +49,7 @@ docker run -it --name devops-investigation marialazaradev/linux-essentials:lates
 | 11 | Comparação da configuração com o backup | `diff billing-config.yml billing-config.yml.backup` |
 | 12 | Backup de segurança antes do rollback | `cp billing-config.yml billing-config.yml.pre-rollback` |
 | 13 | Rollback da configuração | `nano billing-config.yml` |
-| 14 | Restauração de permissões seguras | `chmod 444 billing-config.yml` |
+| 14 | Restauração de permissões seguras | `chmod 644 billing-config.yml` |
 | 15 | Reinício da aplicação | `kill <PID>` + `start-billing-api.sh` |
 | 16 | Validação da recuperação | `tail -f app.log` |
 | 17 | Comunicação da resolução | — |
