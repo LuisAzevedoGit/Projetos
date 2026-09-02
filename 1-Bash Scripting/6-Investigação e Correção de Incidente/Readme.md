@@ -77,12 +77,10 @@ Rollback da configuração `data_directory` de `/data/billing` para `/opt/seeds`
 ```
 .
 ├── README.md
-├── docs/
-│   └── material-do-curso.md        # PBL original / guião da aula
-├── notas/
-│   └── notas-aulas.md              # Notas pessoais tiradas durante o curso
-└── screenshots/
-    └── ...                         # Prints do terminal em cada etapa
+├── apotamentos.txt       # Notas pessoais tiradas durante o curso
+├── diretorios linux.png          
+└── permissoes linux.png
+
 ```
 
 ## 📚 Referências
