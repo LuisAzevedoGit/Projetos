@@ -1,0 +1,157 @@
+Aula 1:
+Definiçao do problema: Numa empresa, uma api deixou de funcionar, sistema de pagamentos nao permite a execuçao/pagamento.
+
+Aplicação não processa transações
+Erros de corrupção de dados nos logs
+Falha na validação de integridade
+Serviço rodando, mas rejeitando transações
+Dashboard em "degraded"
+
+
+Dados: aplicaçao billing-api
+Joao fez gmud(mudanças no sistema) e guardou os logs em /opt/docs
+
+
+Troubleshooting:
+1- entender o sistema
+2- ver processos
+3- ver logsachar arquivos de configuraçao
+4- ver diferenças
+5- editar arquivos
+6- editar permissoes
+7- reiniciar o sistema
+
+Objetivo voltar o sistema funcional.
+
+Aula 2:
+Preparar o nosso ambiente.
+docker pull marialazaradev/linux-essentials:latest
+docker run -it --name devops-investigation marialazaradev/linux-essentials:latest
+
+Aula 3:
+
+
+/	Raiz do sistema — tudo começa aqui	⭐⭐⭐
+/home	Pastas e ficheiros dos utilizadores	⭐⭐⭐
+/root	Home do utilizador root	⭐⭐⭐
+/etc	Configurações do sistema e serviços	⭐⭐⭐⭐⭐
+/var	Dados que mudam frequentemente	⭐⭐⭐⭐⭐
+/var/log	Logs do sistema e aplicações	⭐⭐⭐⭐⭐
+/opt	Aplicações instaladas manualmente/extra	⭐⭐⭐
+/usr	Programas, bibliotecas e comandos do sistema	⭐⭐⭐⭐
+/usr/local	Programas instalados manualmente pelo administrador	⭐⭐⭐
+/bin	Comandos essenciais (ls, cp, etc.)	⭐⭐⭐
+/sbin	Comandos de administração do sistema	⭐⭐⭐
+/tmp	Ficheiros temporários	⭐⭐⭐
+/mnt	Montagens temporárias de discos	⭐⭐⭐
+/media	Discos USB, CD/DVD e outros dispositivos removíveis	⭐⭐
+/dev	Dispositivos representados como ficheiros (discos, etc.)	⭐⭐⭐⭐
+/proc	Informação virtual sobre processos e kernel	⭐⭐⭐⭐
+/sys	Informação e controlo de hardware/kernel	⭐⭐⭐
+/boot	Ficheiros necessários para arrancar o Linux	⭐⭐⭐
+/lib	Bibliotecas essenciais usadas por programas	⭐⭐⭐
+/home/lfoa/Pictures/Screenshots
+
+pwd -> qual pasta está.
+whoami -> utilizador que esta logado
+uname -a-> sistema operacional
+df -h-> disk free
+free -h -> ver memoria
+ps aux -> ver os processos ativos
+| -> pipe, usamos para utilizar o que foi retornado no comando anterior e com isso faz outra operaçao, ver exemplo abaixo. 
+ps aux | grep billing -> lista todos os processos e filtra
+
+Aula 4:
+find / -name "billing": procurar no caso no repositorio / tudo o que contem "billing"
+find / -name "billing" 2>/dev/null : remove tudo o que deu erro de permission denied
+cd: change diretorio
+ls: listar os ficheiros na pasta
+ls -la: mais conteudo 
+primeira coluna:
+d -> diretorio
+- -> ficheiro
+
+head app.log: mostra do ficheiro app.log as 10 primeiras linhas 
+tail app.log: mostra do ficheiro app.log as 10 ultimas linhas 
+tail -f app.log: abrir os logs em tempo real
+touch file.txt: criar arquivos
+cat file.txt: ver conteudo
+nano file.txt: editar o conteudo do ficheiro
+
+tail app.log > teste.txt --> copia os dados retornados para teste.txt
+
+tail app.log | grep "ERROR" > somente_erros.txt 
+cp file path que quer colar: copiar ficheiro para uma path
+
+ls srv/app: ver o conteudo de uma pasta especifica
+
+mv somente_erros.txt  /srv/app: mover para um caminho especifico
+mv teste.txt lixo.txt: renomear o ficheiro
+
+
+aula 5:
+investigação de mudanças no sistema
+
+aula 6:
+
+find / -name "*conf*" 2>/dev/null | grep billing
+
+diff billing-config.yml billing-config.yml.backup: comparar diferenças de 2 arquivos
+
+cp billing-config.yml billing-config-pre-rollback.yml --> fazer o backup antes do rollback
+
+diff billing-config.yml billing-config-pre-rollback.yml  --> nao retornou nada, nao ha diferenças
+
+Error writing billing-config.yml: Permission denied --> nano billing-config.ym
+
+
+
+aula 7: permissoes
+
+Print de explicaçoes de permissoes em linux
+
+
+4 - (R) ler
+2 - (W) escrever
+1 - (X) execuçao
+0 - sem permissoes
+
+Imaginamos que uma pessoa so pode ler, escrever e executar, fica 4 + 2 +1 -> logo chmod 777 billing-config.yml
+
+
+fazendo o exercicio: 
+dono  RW-  --> 6
+grupo R--  --> 4
+Outros R-- --> 4
+chmod 644 billing-config.yml
+
+-rw-r--r-- 1 devops devops  230 Sep 28  2025 billing-config.yml
+
+
+Aula 8:
+nano billing-config.yml
+mudar o data diretorio: para /opt/seeds
+
+reiniciar o processo:
+ver o processo ps aux
+
+kill PID
+
+reiniciar o serviço : /usr/local/bin/start-billing-api.sh 
+
+ver logs: cd /var/log/marialazara
+
+tail -f app.log 
+
+FIM:
+ver container running:
+docker ps
+desligar container
+docker stop container id
+
+ver imagens:
+docker images
+remover a imagem:
+docker rmi nome_imagem
+
+confirmar.
