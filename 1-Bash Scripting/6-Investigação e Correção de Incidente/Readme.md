@@ -1,6 +1,6 @@
 # 🔍 Investigação e Correção de Incidente 
 
-Projeto prático de **DevOps / Linux Essentials**, desenvolvido a partir da série do canal [MariaLazaraDev](https://www.youtube.com/@marialazaradev), simulando a investigação e resolução de um incidente real de produção usando **Aprendizagem Baseada em Problemas (PBL)**.
+Projeto prático de **DevOps / Linux Essentials**, desenvolvido a partir da série do canal [MariaLazaraDev](https://www.youtube.com/@marialazaradev), simulando a investigação e resolução de um incidente real de produção.
 
 ## 📌 Contexto
 
