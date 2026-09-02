@@ -31,26 +31,26 @@ docker run -it --name devops-investigation marialazaradev/linux-essentials:lates
 Aula 3:
 
 
-/	Raiz do sistema — tudo começa aqui	⭐⭐⭐
-/home	Pastas e ficheiros dos utilizadores	⭐⭐⭐
-/root	Home do utilizador root	⭐⭐⭐
-/etc	Configurações do sistema e serviços	⭐⭐⭐⭐⭐
-/var	Dados que mudam frequentemente	⭐⭐⭐⭐⭐
-/var/log	Logs do sistema e aplicações	⭐⭐⭐⭐⭐
-/opt	Aplicações instaladas manualmente/extra	⭐⭐⭐
-/usr	Programas, bibliotecas e comandos do sistema	⭐⭐⭐⭐
-/usr/local	Programas instalados manualmente pelo administrador	⭐⭐⭐
-/bin	Comandos essenciais (ls, cp, etc.)	⭐⭐⭐
-/sbin	Comandos de administração do sistema	⭐⭐⭐
-/tmp	Ficheiros temporários	⭐⭐⭐
-/mnt	Montagens temporárias de discos	⭐⭐⭐
-/media	Discos USB, CD/DVD e outros dispositivos removíveis	⭐⭐
-/dev	Dispositivos representados como ficheiros (discos, etc.)	⭐⭐⭐⭐
-/proc	Informação virtual sobre processos e kernel	⭐⭐⭐⭐
-/sys	Informação e controlo de hardware/kernel	⭐⭐⭐
-/boot	Ficheiros necessários para arrancar o Linux	⭐⭐⭐
-/lib	Bibliotecas essenciais usadas por programas	⭐⭐⭐
-/home/lfoa/Pictures/Screenshots
+/	Raiz do sistema — tudo começa aqui
+/home	Pastas e ficheiros dos utilizadores	
+/root	Home do utilizador root
+/etc	Configurações do sistema e serviços	
+/var	Dados que mudam frequentemente	
+/var/log	Logs do sistema e aplicações	
+/opt	Aplicações instaladas manualmente/extra	
+/usr	Programas, bibliotecas e comandos do sistema	
+/usr/local	Programas instalados manualmente pelo administrador	
+/bin	Comandos essenciais (ls, cp, etc.)	
+/sbin	Comandos de administração do sistema	
+/tmp	Ficheiros temporários	
+/mnt	Montagens temporárias de discos	
+/media	Discos USB, CD/DVD e outros dispositivos removíveis	
+/dev	Dispositivos representados como ficheiros (discos, etc.)	
+/proc	Informação virtual sobre processos e kernel	
+/sys	Informação e controlo de hardware/kernel
+/boot	Ficheiros necessários para arrancar o Linux
+/lib	Bibliotecas essenciais usadas por programas
+
 
 pwd -> qual pasta está.
 whoami -> utilizador que esta logado
@@ -116,7 +116,7 @@ Print de explicaçoes de permissoes em linux
 1 - (X) execuçao
 0 - sem permissoes
 
-Imaginamos que uma pessoa so pode ler, escrever e executar, fica 4 + 2 +1 -> logo chmod 777 billing-config.yml
+Imaginamos que uma pessoa pode ler, escrever e executar, fica 4 + 2 +1 -> logo chmod 777 billing-config.yml
 
 
 fazendo o exercicio: 
