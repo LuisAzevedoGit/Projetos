@@ -1,0 +1,12 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Secrets
+*.tfvars
+*.tfvars.json
+
+# Logs
+*.log
