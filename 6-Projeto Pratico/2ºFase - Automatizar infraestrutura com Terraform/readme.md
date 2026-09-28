@@ -48,8 +48,8 @@ Descrever toda a infraestrutura em **ficheiros de código (`.tf`)**, para que po
 - **Destruída** com um único comando (`terraform destroy`), evitando custos esquecidos.
 - **Partilhada** em equipa, graças ao state remoto no S3.
 
-
 Link da documentação Terraform para AWS: https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+
 ---
 
 ## 🏛️ Arquitetura
