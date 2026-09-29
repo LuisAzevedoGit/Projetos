@@ -40,14 +40,18 @@ jobs:
           terraform_version: 1.7.6  
 
       - name: Terraform Init
+        working-directory: 6-Projeto Pratico/3ºFase- Pipeline de infraestrutura
         run: terraform init
 
       - name: Terraform Validate
+        working-directory: 6-Projeto Pratico/3ºFase- Pipeline de infraestrutura
         run: terraform validate
 
       - name: Terraform Plan
+        working-directory: 6-Projeto Pratico/3ºFase- Pipeline de infraestrutura
         run: terraform plan -out=tfplan.tfout
 
       - name: Terraform Apply
+        working-directory: 6-Projeto Pratico/3ºFase- Pipeline de infraestrutura
         if: ${{ github.event.inputs.apply == 'true' }}
         run: terraform apply -auto-approve tfplan.tfout         
