@@ -5,6 +5,7 @@
 resource "aws_key_pair" "website" {
   key_name   = "meu-website-key"
   public_key =  file("${path.module}/keys/meu-website-key.pub")
+  #public_key = file("~/.ssh/meu-website-key.pub") fase 2
 }
 
 
@@ -30,7 +31,7 @@ resource "aws_instance" "website_server" {
 resource "aws_security_group" "website_sg" {
   name        = "security group do site"
   description = "create security group"
-  vpc_id      = "vpc-xxxxxxxxxxxxxxx"
+  vpc_id      = "vpc-0d048213ad1ccc183"
 
   tags = {
     Name        = "website-sg"
