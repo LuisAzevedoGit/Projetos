@@ -34,10 +34,8 @@ jobs:
           role-to-assume: arn:aws:iam::367332297990:role/GitHubAccessRole
           aws-region: eu-north-1
 
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v2
-        with:
-          terraform_version: 1.7.6  
+      - name: HashiCorp - Setup Terraform
+        uses: hashicorp/setup-terraform@v4.0.1
 
       - name: Terraform Init
         working-directory: 6-Projeto Pratico/3ºFase- Pipeline de infraestrutura
