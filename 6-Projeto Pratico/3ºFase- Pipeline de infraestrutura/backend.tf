@@ -6,7 +6,7 @@ terraform {
 
     bucket  = "terraform-state-luisazevedo" #nome
     key     = "site/terraform.tfstate"      #pasta onde o arquivo vai  ficar
-    region  = "eu-west-3"                   #regiao do bucket
+    region  = "eu-north-1"                   #regiao do bucket
     encrypt = true                          #encryptar os dados
     use_lockfile = true
   }
