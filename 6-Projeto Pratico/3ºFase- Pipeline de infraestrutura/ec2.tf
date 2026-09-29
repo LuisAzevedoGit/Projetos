@@ -4,7 +4,7 @@
 
 resource "aws_key_pair" "website" {
   key_name   = "meu-website-key"
-  public_key = file("~/.ssh/meu-website-key.pub")
+  public_key =  file("${path.module}/keys/meu-website-key.pub")
 }
 
 
