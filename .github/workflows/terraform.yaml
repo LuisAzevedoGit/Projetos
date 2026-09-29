@@ -15,6 +15,25 @@ on:
           - true
           - false
 
+
+      plan_destroy:
+        description: 'planear o terraform destroy'
+        required: true
+        default: 'false'
+        type: choice
+        options:
+          - true
+          - false    
+
+      destroy:
+        description: 'Executar o terraform destroy'
+        required: true
+        default: 'false'
+        type: choice
+        options:
+          - true
+          - false    
+
 permissions:
   contents: read
   id-token: write
@@ -53,3 +72,14 @@ jobs:
         working-directory: 6-Projeto Pratico/3ºFase- Pipeline de infraestrutura
         if: ${{ github.event.inputs.apply == 'true' }}
         run: terraform apply -auto-approve tfplan.tfout         
+
+      - name: Terraform plan destroy
+        working-directory: 6-Projeto Pratico/3ºFase- Pipeline de infraestrutura
+        if: ${{ github.event.inputs.plan_destroy == 'true' }}
+        run: terraform plan -destroy -out=tfplandestroy
+
+
+      - name: Terraform destroy
+        working-directory: 6-Projeto Pratico/3ºFase- Pipeline de infraestrutura
+        if: ${{ github.event.inputs.destroy == 'true' }}
+        run: terraform apply  -destroy -auto-approve tfplandestroy   
