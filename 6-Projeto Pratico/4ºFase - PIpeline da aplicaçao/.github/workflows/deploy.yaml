@@ -1,0 +1,68 @@
+name: pipeline CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  jobs1:
+    name: build ecr
+    runs-on: ubuntu-latest
+    env: 
+      ACCOUNT_ID: ${{ secrets.ACCOUNT_ID}}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::${ACCOUNT_ID}:role/GitHubAccessRole
+          aws-region: eu-north-1
+          role-skip-session-tagging: true
+
+      - name: Login to Amazon ECR
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build, tag, and push image to Amazon ECR
+        working-directory: app
+        run: |
+          docker build -t meu-website:v1.0 .
+          docker tag meu-website:v1.0 ${ACCOUNT_ID}.dkr.ecr.eu-north-1.amazonaws.com/site_prod:v1.0
+          docker push ${ACCOUNT_ID}.dkr.ecr.eu-north-1.amazonaws.com/site_prod:v1.0
+
+
+  job2:
+    name: deploy_ec2
+    needs: jobs1
+    env:
+      EC2_KEY_PRIVADA: ${{ secrets.EC2_KEY_PRIVADA}}
+      ACCOUNT_ID: ${{ secrets.ACCOUNT_ID}}
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: ssh ec2
+        run: |
+          echo "$EC2_KEY_PRIVADA" > chave-site
+          chmod 400 chave-site
+          ssh -i chave-site -o StrictHostKeyChecking=no ec2-user@51.21.168.25 << EOF
+            aws ecr get-login-password --region eu-north-1 | docker login --username AWS --password-stdin ${ACCOUNT_ID}.dkr.ecr.eu-north-1.amazonaws.com
+            echo "Pull da nova imagem do ECR"
+            docker pull ${ACCOUNT_ID}.dkr.ecr.eu-north-1.amazonaws.com/site_prod:v1.0
+            echo "stop contaner antigo"
+            docker stop site || true
+            echo "remover contaner antigo"
+            docker rm site || true
+            echo "iniciando um novo contaner"
+            docker run -d -p 80:80 --name site ${ACCOUNT_ID}.dkr.ecr.eu-north-1.amazonaws.com/site_prod:v1.0
+            docker ps -a
+          EOF
+          rm -f chave-site.pem
