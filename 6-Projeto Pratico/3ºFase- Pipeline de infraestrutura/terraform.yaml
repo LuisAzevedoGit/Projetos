@@ -42,6 +42,8 @@ permissions:
 jobs:
   job1:
     name: Terraform
+    env:
+      ACCOUNT_ID: ${{ secrets.ACCOUNT_ID}}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -50,7 +52,7 @@ jobs:
       - name: Setup AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          role-to-assume: arn:aws:iam::367332297990:role/GitHubAccessRole
+          role-to-assume: arn:aws:iam::ACCOUNT_ID:role/GitHubAccessRole
           aws-region: eu-north-1
 
       - name: HashiCorp - Setup Terraform

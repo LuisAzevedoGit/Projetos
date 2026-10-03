@@ -31,7 +31,7 @@ resource "aws_instance" "website_server" {
 resource "aws_security_group" "website_sg" {
   name        = "security group do site"
   description = "create security group"
-  vpc_id      = "vpc-0d048213ad1ccc183"
+  vpc_id      = "vpc-xxxxxxxxxxx" #substituir pelo id da vpc
 
   tags = {
     Name        = "website-sg"
@@ -44,7 +44,7 @@ resource "aws_security_group" "website_sg" {
 #regra cesso por ssh, apenas para o meu ip
 resource "aws_vpc_security_group_ingress_rule" "allow_ssh" {
   security_group_id = aws_security_group.website_sg.id #atrelar esta regra ao security group anterior
-  cidr_ipv4         = "123.123.123.123/32"
+  cidr_ipv4         = "123.123.123.123/32"  #substituir pelo meu ip
   from_port         = 22
   ip_protocol       = "tcp"
   to_port           = 22
