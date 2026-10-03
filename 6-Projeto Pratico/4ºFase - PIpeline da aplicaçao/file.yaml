@@ -1,0 +1,33 @@
+name: pipeline da aplicacao
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: build application
+
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: push application to ECR
+        uses: aws-actions/amazon-ecr-login@v2
+
+
+      - name: Build Docker image
+        run: docker build -t meu-website:v1.0 .
+
+      - name: Run Docker container
+        run: docker run -d -p 8080:80 --name meu-website-container meu-website:v1.0
+
