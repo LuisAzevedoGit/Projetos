@@ -1,0 +1,25 @@
+name: Docker CI
+
+on:
+
+  push:
+    branches:
+      - main
+
+jobs:
+
+  docker:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t docker-ci-app .
+
+      - name: Run container test
+        run: |
+          docker run -d -p 3000:3000 --name app docker-ci-app

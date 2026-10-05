@@ -1,1 +1,0 @@
-Projetos feitos com Ansible
