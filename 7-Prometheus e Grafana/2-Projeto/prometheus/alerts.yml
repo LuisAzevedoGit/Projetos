@@ -1,0 +1,26 @@
+groups:
+  - name: alertas-laboratorio
+    rules:
+      - alert: CpuAlto
+        expr: 100 - (avg by (instance) (rate(node_cpu_seconds_total{mode="idle"}[2m])) * 100) > 70
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "CPU acima de 70% em {{ $labels.instance }}"
+          description: "Utilização atual: {{ $value | printf \"%.1f\" }}%"
+
+      - alert: WebsiteParado
+        expr: absent(container_last_seen{name="meu-website-container"})
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "O contentor meu-website-container deixou de existir (parado ou crashado)"
+
+      - alert: WebsiteReiniciou
+        expr: changes(container_start_time_seconds{name="meu-website-container"}[5m]) > 0
+        labels:
+          severity: warning
+        annotations:
+          summary: "O contentor meu-website-container foi reiniciado"
