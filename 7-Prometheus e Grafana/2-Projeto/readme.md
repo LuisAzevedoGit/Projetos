@@ -91,21 +91,14 @@ O `docker-compose.yml` e os jobs do `prometheus.yml` (`prometheus`, `node_export
 
 ### 2. Alteração ao `prometheus/prometheus.yml`
 
-Foi acrescentado apenas este bloco, ao nível de `global` e `scrape_configs`:
+Foi acrescentado apenas este bloco:
 
 ```yaml
-global:
-  scrape_interval: 15s
-  evaluation_interval: 15s
 
 rule_files:
   - /etc/prometheus/alerts.yml
 
-scrape_configs:
-  # ... (jobs sem alterações)
 ```
-
-O caminho é o **caminho dentro do contentor**: como `./prometheus` (no PC) é montado em `/etc/prometheus` (no contentor), o ficheiro `prometheus/alerts.yml` fica em `/etc/prometheus/alerts.yml`.
 
 ### 3. Criar `prometheus/alerts.yml`
 
